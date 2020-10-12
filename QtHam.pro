@@ -2,4 +2,5 @@ TEMPLATE = subdirs
 
 SUBDIRS += \
     QContest \
-    Test
+    Test \
+    tests

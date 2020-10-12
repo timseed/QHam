@@ -17,6 +17,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     band.cpp \
+    callsign.cpp \
     clusterspot.cpp \
     cty.cpp \
     dxcluster.cpp \
@@ -27,6 +28,7 @@ SOURCES += \
 
 HEADERS += \
     band.h \
+    callsign.h \
     clusterspot.h \
     cty.h \
     dxcluster.h \
