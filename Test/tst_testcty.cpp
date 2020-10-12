@@ -1,6 +1,5 @@
 #include <QtTest>
-
-// add necessary includes here
+#include "../QContest/cty.h"
 
 class TestCty : public QObject
 {
@@ -42,6 +41,14 @@ void TestCty::test_case1()
 
 }
 
-QTEST_APPLESS_MAIN(TestCty)
-
 #include "tst_testcty.moc"
+
+
+//QTEST_APPLESS_MAIN(TestCty)
+// full Qt application
+QTEST_MAIN(TestCty)
+// core Qt application: no GUI, but event loop is available
+//QTEST_GUILESS_MAIN(TestName)
+// no Qt application: no GUI and no events
+//QTEST_APPLESS_MAIN(TestName)
+//#include "tst_testcty.moc"

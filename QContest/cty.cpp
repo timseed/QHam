@@ -4,7 +4,8 @@ Cty::Cty()
 {
     QFile file("cty.dat");
     if(!file.open(QIODevice::ReadOnly)) {
-        QMessageBox::information(0, "error", file.errorString());
+        //QMessageBox::information(0, "error", file.errorString());
+        qDebug() << "error" + file.errorString();
     }
 
 
